@@ -1,0 +1,147 @@
+.skill-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.skill-content{
+    display: flex;
+    /* justify-content: center;
+    align-content: center; */
+}
+.skill-display{
+    position: relative;
+    width: 65vw;
+    background-color: red;
+}
+.skill-display-inner{
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid white;
+    left: 20%;
+    top: 30%;
+    width: 600px;
+}
+.skill-display-inner h1{
+    color: white;
+    word-spacing: 2px;
+    letter-spacing: 13px;
+    padding: 10px;
+}
+.skill-display-inner p{
+    text-align:center;
+    padding: 50px;
+    margin-bottom: 30px;
+    color: white;
+}
+.skill-cards{
+    display: flex;
+    width: 50vw;
+    flex-wrap: wrap;
+}
+.card-skill {
+    width: 300px;
+    height: 280px;
+    padding: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .card-skill * {
+    transition: 0.3s ease all;
+  }
+  
+  .card-skill:hover{
+      cursor: pointer;
+      transform: scale(1.05);
+  }
+  
+  .card-skill h3 {
+    margin: 0;
+    padding: 12px 12px 48px;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  
+  
+  .card p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .card:hover img, .card:focus-within img {
+    margin-top: -80px;
+    cursor: pointer;
+  }
+  
+  .card:hover h3, .card:focus-within h3 {
+    padding: 8px 12px 0;
+    cursor: pointer;
+  }
+  .card-contents{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+  }
+  .card-skill{
+
+     margin-right: 1%;
+     margin-bottom: 1%;
+  }
+  .para{
+      margin-left: 25%;
+      width: 50%;
+  }
+  .ui{
+      background-color: rgb(206, 162, 247);
+  }
+  .web{
+      background-color: rgb(255, 180, 180);
+  }
+  .app-dev{
+      background-color: yellow;
+  }
+  .type{
+      background-color: lightgreen;
+  }
+  .project{
+    background-color: cornflowerblue;
+  }
+  .blog{
+      background-color: skyblue;
+  }
+  @media screen and (max-width : 768px) and (min-width : 310px){
+    .skill-content{
+      display: block;
+    }
+    .skill-cards{
+        display: none;
+    }
+    .skill-display{
+       height: 70vh;
+       padding: 0;
+       margin: 0;
+       width: 100vw;
+    }
+    .skill-display-inner{
+        position: absolute;
+        background-color: transparent;
+        /* border: 2px solid white; */
+        left: 1.35%;
+        top: 10%;
+        width: 95.9vw;
+    }
+    .skill-display-inner h1{
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+    .skill-display-inner p{
+        text-align: justify;
+        padding: 40px;
+    }
+  }

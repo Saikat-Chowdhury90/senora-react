@@ -1,0 +1,256 @@
+.posts-container{
+    background-color: yellow;
+}
+
+.posts-heading h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.card {
+    width: 250px;
+    height: 280px;
+    padding: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .card * {
+    transition: 0.3s ease all;
+  }
+  
+  .card img {
+    margin: 0;
+    width: 250px;
+    height: 224px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .card h3 {
+    margin: 0;
+    padding: 12px 12px 48px;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .card .focus-content {
+    display: block;
+    padding: 8px 12px;
+  }
+  
+  .card p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .card:hover img, .card:focus-within img {
+    margin-top: -80px;
+    cursor: pointer;
+  }
+  
+  .card:hover h3, .card:focus-within h3 {
+    padding: 8px 12px 0;
+    cursor: pointer;
+  }
+  .card-contents{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+  }
+  .card{
+     margin-right: 2%;
+     margin-bottom: 8%;
+  }
+  .para{
+      margin-left: 25%;
+      width: 50%;
+  }
+  .posts-content{
+    display: flex;
+    
+  }
+  
+  .work-exp{
+    background-color: rgb(84, 153, 233);
+    width: 65vw;
+    
+    padding-top: 30px;
+    color: white;
+  }
+  .work-exp h1{
+    font-size: 20px;
+  }
+  .education{
+    position: relative;
+  }
+  .work-experience{
+    position: relative;
+  }
+  .timeline-divider
+{
+    position:absolute;
+    height: 80%;
+    width: 0;
+    border: 3px dashed rgb(181, 181, 231);
+    left: 5%;
+    top: 10%;
+}
+.timeline-divider-right{
+  position:absolute;
+  height: 80%;
+  width: 0;
+  border: 3px dashed rgb(181, 181, 231);
+  left: 5%;
+  top: 10%
+}
+.timeline-icon div{
+  position: absolute;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: -10px;
+}
+.first{
+  top: -3px;
+  
+}
+.second{
+  top: 182px;
+}
+.third{
+  top: 365px;
+}
+.content{
+  text-align: left;
+  position: relative;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.content-2{
+  margin-top: 50%;
+}
+.content-3{
+  margin-top: 40%;
+}
+.content p{
+  font-size: 12px;
+}
+.work-timeline{
+  display: flex;
+  justify-content: space-around;
+}
+.started{
+  position: relative;
+  margin-top: 3%;
+  padding: 20px;
+}
+.b-card{
+  text-align: left;
+  background-color: rgb(66, 122, 224);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+}
+.b-card p{
+  padding-top: 10px;
+}
+.button-content button{
+  width: 150px;
+  margin-top: 50%;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+@media screen and (max-width : 768px) and (min-width : 310px){
+  .para{
+    display: none;
+  }
+  .posts-content{
+    display: block;
+  }
+  .work-exp{
+    background-color: rgb(84, 153, 233);
+    width: 100vw;
+    
+    padding-top: 30px;
+    color: white;
+  }
+  .b-card{
+    height: 170px;
+    display: block;
+    margin-top: 23%;
+  }
+  .b-card h4{
+    text-align: center !important;
+  }
+  .b-card p{
+  font-size: 15px;
+  }
+  .button-content button{
+    width: 150px;
+    margin-top: 10%;
+    margin-left: 25%;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .timeline-divider
+{
+    position:absolute;
+    height: 95%;
+    width: 0;
+    border: 3px dashed rgb(181, 181, 231);
+    left: 5%;
+    top: 10%;
+}
+.timeline-divider-right{
+  position:absolute;
+  height: 95%;
+  width: 0;
+  border: 3px dashed rgb(181, 181, 231);
+  left: 5%;
+  top: 10%
+}
+
+
+.focus-content p{
+  display: none;
+}
+
+.card {
+  width: 250px;
+  height: 280px;
+  padding: 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: visible;
+  
+}
+.card-contents {
+  width: 100vw;
+  position: relative !important;
+  display: flex !important;
+  user-select: none !important;
+  flex-wrap: nowrap !important;
+  overflow-x: scroll !important ;
+  scroll-behavior: smooth !important;
+  justify-content: space-around;
+  align-content: space-around;
+  overflow-y: scroll !important;
+}
+.latest-posts{
+  overflow: visible !important;
+}
+.card-1{
+  margin-left: 100%;
+}
+}

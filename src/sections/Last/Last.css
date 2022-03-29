@@ -1,0 +1,66 @@
+.last-container{
+    background-color: #CFDD2E;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.image{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    margin-top: 80%;
+   
+}
+.image{
+    background-image: url("../../images/back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.mail-number{
+    margin-top: 15%;
+}
+.mail-number p{
+    font-weight: 800;
+   
+}
+.follow{
+    font-weight: 500 !important;
+    margin-top: 3%;
+}
+
+.icons{
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.icon-container{
+    
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.twitter{
+    background-image: url("../../images/twitter.png");
+    background-size:cover ;
+    border-radius: 50%;
+}
+.facebook{
+    background-image: url('../../images/facebook.png');
+    background-size: cover;
+    
+}
+.instagram{
+    background-image: url('../../images/instagram.png');
+    background-size: cover;
+    border-radius: 10px;
+}

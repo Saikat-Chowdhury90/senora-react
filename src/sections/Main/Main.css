@@ -1,0 +1,274 @@
+@keyframes slide-left{
+    0%{
+      transform: translate3d(-580px, 0, 0);
+    }
+    100%{
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes slide-right{
+    0%{
+      transform: translate3d(650px, 0, 0);
+    }
+    100%{
+      transform: translate3d(0, 0, 0);
+    }
+  }
+.main-container{
+    background:linear-gradient(#1048B9,#0B4ABE) ;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 120vh;
+   overflow: hidden;
+   cursor: pointer;
+    
+}
+ 
+.back-img{
+    display: flex;
+    overflow: hidden;
+}
+.left-img img{
+    background-size:cover;
+    height: 120vh;
+    
+    left: 0;
+    position: absolute;
+    transform: translate3d(-580px,0,0);
+    
+}
+.right-img{
+    overflow: hidden;
+}
+.right-img div{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    z-index: 3;
+    transform: translate3d(650px,0,0);
+  
+}
+
+.right-img img{
+    position: absolute;
+    height: 180px;
+    width: 200px;
+    right: 0;
+   
+    border-radius: 30px;
+}
+.dog{
+    top: 380px;
+    right: 400px !important;
+}
+.couple{
+    top: 190px;
+    right: 220px !important;
+    z-index: 1;
+}
+.flower{
+    right: 50px !important;
+    z-index: 2;
+}
+
+.main-container:hover .intro-content{
+    opacity: 1;
+}
+.main-container:hover .left-img img{
+    animation: slide-left 1s ease;
+    animation-fill-mode: forwards;
+}
+.main-container:hover .right-img div{
+    animation: slide-right 1s ease;
+    animation-fill-mode: forwards;
+   
+}
+.main-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    z-index: 8;
+}
+.main-nav{
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+.main-nav-bar{
+    margin-left: 105%;
+}
+.main-ul{
+    list-style-type: none;
+    display: flex;
+
+
+    overflow: hidden ;
+    
+  }
+  
+ .main-ul li {
+      
+      box-sizing: border-box;
+      
+  }
+  
+ .main-ul li a {
+    
+    color: white;
+    text-align: center;
+    padding:30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .main-ul li a i{
+    
+      margin-left: 5%;
+      
+      
+  }
+
+.intro-content{
+   position: absolute;
+   left: 6%;
+   top: 55%;
+   opacity: 0;
+   transition: all 0.5s;
+}
+.intro-heading h1{
+color: white;
+font-size: 3rem;
+text-align: left;
+}
+.intro-para p{
+    padding-top: 15px;
+    color: white;
+    text-align: left;
+}
+.view-btn button{
+    padding: 5px;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: -155px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.main-img{
+    display: none;
+}
+
+/* Mobile Version */
+@media screen and (max-width : 768px) and (min-width : 310px){
+    .main-container{
+        position: relative;
+        height: 100vh;
+        overflow-x: hidden !important;
+    }
+    .main-nav-bar{
+        margin-left: 1%;
+    }
+    .left-img img{
+        display: none;
+    }
+    .back-img{
+        display: block;
+    }
+    .right-img{
+        display: block;
+        transition: none;
+    }
+    .main-ul li{
+        width: 75px;
+        padding: 0;
+    }
+  .main-ul li a{
+      font-size: 13px;
+      padding: 0;
+  }
+  .main-img{
+      display: block;
+     
+  }
+  .main-img img{
+      position: absolute;
+      width: 200px;
+      height: 300px;
+      top: 48%;
+      right: 25%;
+      border-radius: 10px;
+      animation: slide-left 1s ease;
+    animation-fill-mode: forwards;
+  }
+  .intro-content{
+    position: absolute;
+    left: 6%;
+    top: 15%;
+    transform: translate3d(-580px,0,0);
+    animation: slide-left 1s ease forwards;
+    opacity: 1;
+    
+ }
+ .intro-heading h1{
+ color: white !important;
+ font-size: 22px;
+ text-align: left;
+
+ }
+ .view-btn button{
+    padding: 5px;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: -10px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.right-img{
+    overflow: hidden;
+}
+.right-img div{
+    position: absolute;
+    right: -3%;
+    top: 0%;
+   
+    transform: translate3d(650px,0,0);
+    animation: slide-right 1s ease forwards;
+  
+}
+
+.right-img img{
+    position: absolute;
+    height: 150px;
+    width: 140px;
+    right: 0;
+   
+    border-radius: 30px;
+}
+.dog{
+    top: 250px;
+    right: 15px !important;
+}
+.couple{
+    top: 510px;
+    right: 240px !important;
+    z-index: 1;
+}
+.flower{
+    top: 380px;
+    right: 130px !important;
+    z-index: 2;
+}
+}
+
+
